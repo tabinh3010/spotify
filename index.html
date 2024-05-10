@@ -354,6 +354,7 @@
             // Check if the entered username exists and the password matches
             if (users.hasOwnProperty(username) && users[username] === password) {
                 window.location.href = "dashboard.html"; // Redirect to dashboard
+                alert("Login success.")
                 return false; // Prevent form submission
             } else {
                 alert("Invalid username or password."); // Show error message
